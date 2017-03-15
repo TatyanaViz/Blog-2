@@ -12,7 +12,7 @@
          {% for text in latest_text_list %}
          <tr>
                  <td>{{ text.id }}</td>
-                 <td><a href="/polls/{{ title }}/">{{ text.title }}</a></td>
+                 <td><a href="{% url 'detail' text.id %}">{{ text.title }}</a></td>
                  <td>{{ text.date_of_publication }}</td>
          </tr>
          {% endfor %}
