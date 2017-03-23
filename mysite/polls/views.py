@@ -17,3 +17,7 @@ def index(request):
 def detail(request, text_id):
     post = get_object_or_404(Post, pk=text_id)
     return render(request, 'polls/detail.html',{'post':post})
+
+def edit(request, text_id):
+    post = get_object_or_404(Post, pk=text_id)
+    return render(request, 'polls/edit.html', {'post': post})

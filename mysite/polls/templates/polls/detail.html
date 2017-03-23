@@ -7,6 +7,9 @@
     <p><strong>Text: </strong>{{ post.text }}</p>
     <form>
         <button> DELETE </button>
-        <button> EDIT </button>
+        <form action="/edit/{{ text.id }}">
+            <button type="submit"> EDIT </button>
+        </form>
+
     </form>
 </body>
