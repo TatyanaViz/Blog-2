@@ -1,16 +1,5 @@
-<head>
-    <h1>Edit form</h1>
-</head>
-<body>
-    <p><strong>Title: </strong></p>
-    <form>
-        <input type ="text" size="100" value="{{ title.id }}">
-    </form>
-    <p><strong>Text: </strong></p>
-    <form>
-        <input type="text" size="1000" value="{{ text.id }}">
-    </form>
-    <form>
-        <button> SAVE </button>
-    </form>
-</body>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-success">SAVE</button>
+</form>
